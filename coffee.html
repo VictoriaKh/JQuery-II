@@ -58,6 +58,7 @@
     //setting a variable to refer to the element (with id = coffee-image)
     const coffeeImage = document.querySelector('#coffee-image');
     coffeeImage.setAttribute('src', 'static/coffee_beans.jpg'); 
+    //attributes are stored in a dictionary format. We are updating dict attributes, where src is a key, and an image path is a value.
 
     function makeCoffee() {
       coffeeImage.setAttribute('src', 'static/coffee_mug.jpg');
@@ -75,18 +76,10 @@
       showMachine();
       setTimeout(makeCoffee,1500);
       setTimeout(showBeans,4000);
-
     }
     
 
     coffeeImage.addEventListener('click', showCoffeeImages);
-
-    
-
-    //attributes are stored in a dictionary format. We are updating dict attributes, where src is a key, and an image path is a value.
-
-
-    //const revenueMessage;
 
     // use this JavaScript object in further study step
 
